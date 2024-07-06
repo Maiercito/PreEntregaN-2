@@ -1,0 +1,370 @@
+/* 
+Colores hexadecimales:
+
+-  Whatsapp: #25D366
+
+-  Discord: #7289da
+
+- Footer: #335
+
+- CELESTE: #03d5ff
+
+BACKGROUND MAIN
+
+body{
+    background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgba(133, 20, 20, 0.226)
+    ), url("../assets/backgrounds/fondo1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+FILTRO: 
+
+filter: saturate(4) opacity(0.8);
+backdrop-filter: blur(15px);
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+}
+
+.spanBlue{
+    color: #03d5ff;
+}
+
+body{
+    background-image: linear-gradient(
+        to bottom,
+        rgb(0, 0, 0),
+        rgba(133, 20, 20, 0.226)
+        ), url("../assets/backgrounds/fondo1.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+.flexRow{
+    display: flex;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+/* Header */
+.card__header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.header__nav__list{
+    gap: 30px;
+}
+
+.header__nav__list li{
+    font-size: 0.9em;
+}
+
+.card__header__title{
+    font-size: 20px;
+}
+
+.card__header a:hover{
+    color: #03d5ff;
+    transition: 0.5s;
+}
+
+/* SECTION main*/
+
+.section{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.section h2{
+    font-size: 4em;
+    width: 100%;
+}
+
+.section p{
+    font-size: 1.2em;
+}
+
+.section button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.section button:hover{
+    background-color: #03d5ff;
+    box-shadow: 1px 1px 10px #03d5ff;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+/* SECCION 1 */
+
+h3{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.subtitle__index{
+    display: flex;
+    justify-content: center;
+}
+
+.section__a{
+    justify-content: space-around;
+    height: 40vh;
+    align-items: center;
+}
+
+.card__a{
+    backdrop-filter: blur(7px);
+    padding: 10px;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    height: 50%;
+    justify-content: center;
+}
+/* Section 2 */
+.card__b{
+    backdrop-filter: blur(7px);
+    box-shadow: 1px 1px 10px white;
+    border-radius: 10px;
+    width: 30%;
+    height: 70%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* seccion TIENDA */
+
+.main__tienda{
+    display: flex;
+    justify-content: center;
+}
+.card__a__tienda{
+    display: grid;
+    grid-template-areas: 
+    "mafias bandas estancias"
+    "autos vips estancias"
+    ;
+    width: 80%;
+    grid-template-columns: 0.5fr 0.5fr 0.7fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.card__article__tienda{
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 0.1px solid;
+    box-shadow: 1px 1px 5px;
+}
+
+.card__a__tienda h3{
+    display: flex;
+    justify-content: center;
+
+}
+
+.card__a__tienda img{
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.article__a__tienda{
+    grid-area: mafias;
+}
+
+.article__b__tienda{
+    grid-area: bandas;
+}
+
+.article__c__tienda{
+    grid-area: autos;
+}
+
+.article__d__tienda{
+    grid-area: vips;
+}
+
+.article__e__tienda{
+    grid-area: estancias;
+}
+
+.main__mafias{
+    display: flex;
+    justify-content: center;
+}
+
+.cardsVentas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 50px;
+    margin-top: 50px;
+    backdrop-filter: blur(3px);
+    width: 90%;
+    border-radius: 10px;
+}
+
+.cardsVentas img{
+    width: 50%;
+}
+
+.divMafias{
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0px;
+}
+
+
+
+.divMafias ul{
+    letter-spacing: 1px;
+}
+
+.listContactanos{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 30px;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    background-color: #335;
+    margin-top: 170px;
+}
+
+.footer div{
+    width: 20%;
+}
+
+/* MEDIA QUERIES */
+
+/* 
+    Index 
+*/
+
+@media (max-width: 992px){
+    .section__a{
+        flex-direction: column;
+        gap: 30px;
+        height: 100%;
+        }
+    .card__a, .card__b{
+        width: 80%;
+        height: 30vh;
+        justify-content: center;
+        gap: 20px;
+    }
+    .subtitle__index{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    
+    .footer iframe{
+            width: 100%;
+            height: 300px;
+        }
+    .footer div{
+        width: 100%;
+        text-align: center;
+    }
+    .card__a__tienda{
+        display: grid;
+        grid-template-areas: 
+        "mafias bandas"
+        "autos vips"
+        "estancias estancias"
+        ;
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr;
+        margin-top: 50px;
+        gap: 20px;
+    }
+    .card__article__tienda{
+        width: 100%;
+        height: 80%;
+    }
+    }
+
+
+@media (max-width: 576px){
+    .card__header{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .section h2{
+        font-size: 2em;
+    }
+    .card__a__tienda{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 692px){
+    .cardsVentas{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border: 0.1px solid white;
+    }
+    .unorderlist__ventas{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .cardsVentas img{
+        width: 100%;
+        border-radius: 10px;
+
+    }
+}
